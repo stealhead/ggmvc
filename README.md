@@ -1,2 +1,5 @@
 # ggmvc
-myself mvc(simple)
+---
+### 单一入口
+### 自动加载，命名空间寻址
+### mvc架构
