@@ -7,8 +7,10 @@ class Controller
     {
         global $viewName;
         ob_start();
+        include APP_PATH . '/View/Common/header.html';
         if(file_exists($viewName))
         include $viewName;
+        include APP_PATH . '/View/Common/footer.html';
         $content = ob_get_contents();
         ob_end_clean();
         echo $content;

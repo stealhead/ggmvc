@@ -7,7 +7,8 @@ class Mapper
     public static $instance = null;
     private function __construct()
     {
-        $conf = include APP_PATH.'/Conf/conf.php';
+        $ConfObj = new \Lib\Config();
+        $conf = $ConfObj->getConf('mysql');
         $this->conn = mysqli_connect($conf['host'], $conf['username'], $conf['password'], $conf['database']);
         if($this->conn->connect_error) {
             die('connect error (' . $this->conn->connect_errno . ')' . $this->conn->connect_error);

@@ -1,20 +1,22 @@
-<!DOCTYPE>
-<html lang="zh-CN">
-    <head> 
-        <meta charset="utf-8" />
-        <title> ggphp </title>
-        <link rel="stylesheet" href="https://script.iyuerong.com:444/bootstrap/css/bootstrap.css"></link>
-        <link rel="stylesheet" href="https://script.iyuerong.com:444/bootstrap/css/bootstrap.css"></link>
-        <script src="https://script.iyuerong.com:444/jquery/jquery-3.1.1.min.js"></script>
-        <script src="https://script.iyuerong.com:444/bootstrap/js/bootstrap.min.js"></script>
-        <script src="https://script.iyuerong.com:444/vue/vue.js"></script>
-        <script src="https://script.iyuerong.com:444/layer/layer.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center">i am 1/3</div>
-            </div>
+<div class="container">
+    <div class="row" style="margin-top:200px;">
+        <div class="col-lg-6 col-lg-offset-3 bg-success" style="padding:30px;">
+            <form method="POST" class="form-horizontal">
+                <div class="form-group">
+                    <label for="uname" class="col-lg-2 col-lg-offset-3 control-label"> 用户名: </label>
+                    <div class="col-lg-4">
+                        <input class="form-control" id="uname" name="name" type="text" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="passwd" class="col-lg-2 col-lg-offset-3 control-label"> 密码: </label>
+                    <div class="col-lg-4">
+                        <input class="form-control" id="passwd" name="pwd" type="password" />
+                    </div>
+                </div>
+                <a class="btn btn-default col-lg-offset-5" href="/Home/Login/register"  >注册</a>
+                <input type="submit" value="登录" class="btn btn-default"  />
+            </form>
         </div>
-    </body>
-</html>
+    </div>
+</div>

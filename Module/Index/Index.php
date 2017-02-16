@@ -3,6 +3,7 @@ namespace Module\Index;
 class Index extends \Lib\Controller {
     public function index()
     {
+        //echo "hello";
         $this->assign('name', 'rongrong');
         $this->display();
     }
@@ -21,6 +22,11 @@ class Index extends \Lib\Controller {
         $User = new \Model\User();
         $rows = $User->select();
         var_dump($rows);
+    }
+    public function conf ()
+    {
+        $ConfObj = new \Lib\Config();
+        var_dump($ConfObj->getConf('redis'));
     }
     
 }

@@ -3,10 +3,16 @@ return array(
     'module' => 'index',
     'controller' => 'index',
     'action' => 'index',
-    'host' => 'localhost',
-    'database' => 'ggmvc',
-    'username' => 'root',
-    'password' => 'wg123456',
-    'datatype' => 'mysqli',
-
+    'mysql' => array(
+        'host' => 'localhost',
+        'database' => 'ggmvc',
+        'username' => 'root',
+        'password' => 'wg123456',
+        'datatype' => 'mysqli',
+    ),
+    'redis' => array(
+        'host' => '127.0.0.1',
+        'port' => 6379,
+        'password' => 'wg123456',
+    ),
 );
