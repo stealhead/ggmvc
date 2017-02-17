@@ -31,7 +31,7 @@ class GRedis {
 	 *
 	 * */
 	public function __construct () {
-		$this->_redis = new Redis();
+		$this->_redis = new \Redis();
 	}
 
 	public function setConfig (array $config) {

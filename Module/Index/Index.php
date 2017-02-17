@@ -19,7 +19,7 @@ class Index extends \Lib\Controller {
     }
     public function user()
     {
-        $User = new \Model\User();
+        $User = new \Model\Mysql\User();
         $rows = $User->select();
         var_dump($rows);
     }
@@ -28,6 +28,10 @@ class Index extends \Lib\Controller {
         $ConfObj = new \Lib\Config();
         var_dump($ConfObj->getConf('redis'));
     }
-    
+    public function myredis()
+    {
+        $redis = new \Model\Redis\First();
+        var_dump($redis->get('wang'));
+    }
 }
 

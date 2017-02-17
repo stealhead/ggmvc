@@ -1,5 +1,5 @@
 <?php
-define('APP_PATH', realpath(dirname(__FILE__)) . '/');
+defined('APP_PATH') || define('APP_PATH', realpath(dirname(__FILE__)) . '/');
 require_once(APP_PATH . "Lib/func/Autoload.php");
 $default = include_once(APP_PATH . 'Conf/conf.php');
 $module = $default['module'];
